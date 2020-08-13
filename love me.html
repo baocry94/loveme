@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do you love me</title>
+</head>
+<body>
+<h1 style="position: absolute;left: 220px;top: 175px">Do You Love Me</h1>
+<form>
+    <input type="button" onclick="alert('<3')" value="YES" style="position: absolute;left: 285px;top: 235px;">
+    <input type="button" value="NO" id="no" onmouseover="move()" style="position: absolute;left: 360px;top: 235px;">
+    <script>
+        function move() {
+            var element = document.getElementById("no");
+            var height = parseInt(Math.random() *window.innerHeight);
+            var width = parseInt(Math.random() *window.innerWidth);
+            element.style.left = (width - 50) + 'px';
+            element.style.top = (height - 50) + 'px';
+        }
+    </script>
+</form>
+</body>
+</html>
